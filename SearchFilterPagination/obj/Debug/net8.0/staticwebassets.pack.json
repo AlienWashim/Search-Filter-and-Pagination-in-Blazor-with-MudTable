@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\obj\\Debug\\net8.0\\compressed\\chig6oe9c0.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SearchFilterPagination.styles.css",
+      "PackagePath": "staticwebassets\\SearchFilterPagination.styles.css"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Study\\Life of a Coder\\SearchFilterPagination\\SearchFilterPagination\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SearchFilterPagination.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SearchFilterPagination.props",
+      "PackagePath": "build\\SearchFilterPagination.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SearchFilterPagination.props",
+      "PackagePath": "buildMultiTargeting\\SearchFilterPagination.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SearchFilterPagination.props",
+      "PackagePath": "buildTransitive\\SearchFilterPagination.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

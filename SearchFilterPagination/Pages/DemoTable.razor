@@ -1,0 +1,55 @@
+﻿@page "/mudTable"
+
+@using MudBlazor
+
+@using SearchFilterPagination.Models
+@using SearchFilterPagination.Services
+
+@inject PersonService PersonService
+
+
+<MudTable Items="@People" Hover="true" SortLabel="Sort By" Filter="@FilterFunction">
+	<ToolBarContent>
+		<MudTextField @bind-Value="searchString" Placeholder="Search..." Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"></MudTextField>
+	</ToolBarContent>
+
+	<HeaderContent>
+		<MudTh><MudTableSortLabel SortBy="new Func<Person, object>(x=>x.Id)">ID</MudTableSortLabel></MudTh>
+		<MudTh><MudTableSortLabel SortBy="new Func<Person, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
+		<MudTh><MudTableSortLabel SortBy="new Func<Person, object>(x=>x.Email)">Email</MudTableSortLabel></MudTh>
+		<MudTh><MudTableSortLabel SortBy="new Func<Person, object>(x=>x.Department)">Department</MudTableSortLabel></MudTh>
+	</HeaderContent>
+
+	<RowTemplate>
+		<MudTd DataLabel="ID">@context.Id</MudTd>
+		<MudTd DataLabel="Name">@context.Name</MudTd>
+		<MudTd DataLabel="Email">@context.Email</MudTd>
+		<MudTd DataLabel="Department">@context.Department</MudTd>
+	</RowTemplate>
+
+	<PagerContent>
+		<MudTablePager PageSizeOptions="new int[]{5,10,20}"></MudTablePager>
+	</PagerContent>
+</MudTable>
+
+@code {
+	private List<Person> People = new();
+
+	private string searchString = String.Empty;
+
+	protected override async Task OnInitializedAsync()
+	{
+		People = await PersonService.GetPeople();
+	}
+
+	private bool FilterFunction(Person person){
+		if(!string.IsNullOrWhiteSpace(searchString) && !person.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase) &&
+		!person.Department.Contains(searchString, StringComparison.OrdinalIgnoreCase) &&
+		!person.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+		{
+			return false;
+		}
+
+		return true;
+	}
+}
